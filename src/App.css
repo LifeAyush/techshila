@@ -15,27 +15,33 @@ button {
   cursor: pointer;
 }
 
-
 /* Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
-
+@font-face {
+  font-family: "Whyte Inktrap";
+  src: url("./Assets/Fonts/WhyteInktrap-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Whyte Inktrap Italic";
+  src: url("./Assets/Fonts/WhyteInktrap-Italic.woff") format("woff");
+}
 
 /* Global Styles */
 
 *::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 2px;
   background-color: transparent;
 }
 *::-webkit-scrollbar-track {
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 2px;
   background-color: #010101;
 }
 *::-webkit-scrollbar-thumb {
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 2px;
   background-color: #6838ec;
   border-radius: 8px;
 }
@@ -45,5 +51,32 @@ button {
   align-items: center;
   gap: 140px;
   background-color: #010101;
-  height: 100vh;
+}
+.title {
+  font-family: "Whyte Inktrap";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #ffffff;
+}
+@media screen and (max-width:1200px){
+  .title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width:600px){
+  .title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width:500px){
+  .title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width:400px){
+  .title {
+    font-size: 20px;
+  }
 }

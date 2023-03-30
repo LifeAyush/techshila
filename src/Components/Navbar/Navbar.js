@@ -10,7 +10,9 @@ const Navbar = () => {
   const locator = useLocation();
   return (
     <div className="nav">
-      <img src={logo} alt="STC Presents TechShila" className="nav-logo" />
+      <Link to="/">
+        <img src={logo} alt="STC Presents TechShila" className="nav-logo" />
+      </Link>
       <div className="nav-links">
         <Link
           to="/"

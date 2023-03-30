@@ -1,0 +1,159 @@
+.ps-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0px auto;
+}
+.ps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ps-box {
+  width: 270px;
+  height: 320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  background: #010101;
+  border: 1px solid #ffffff;
+  padding: 40px;
+}
+.ps-number {
+  font-family: "Whyte Inktrap Italic";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 6px;
+  color: #ffffff;
+  position: absolute;
+  left: 16px;
+  top: 35px;
+}
+.ps-title {
+  font-family: "Whyte Inktrap";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 50%;
+  color: #ffffff;
+}
+.ps-desc {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.ps-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.ps-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 8px;
+  gap: 10px;
+  background: #272727;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #ffffff;
+}
+@media screen and (max-width: 1200px) {
+  .ps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .ps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .ps-content {
+    gap: 24px;
+    padding: 0px 24px;
+  }
+  .ps-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ps-box {
+    width: 100%;
+    height: unset;
+    gap: 20px;
+  }
+  .ps-number {
+    left: 40px;
+    top: 42px;
+    font-size: 20px;
+  }
+  .ps-title {
+    margin-left: 48px;
+  }
+  .ps-desc {
+    font-size: 16px;
+  }
+  .ps-tags {
+    position: absolute;
+    right: 16px;
+    top: 28px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ps-box {
+    padding: 24px;
+    gap: 16px;
+  }
+  .ps-number {
+    left: 24px;
+    top: 26px;
+    font-size: 16px;
+  }
+  .ps-title {
+    margin-left: 36px;
+    font-size: 20px;
+  }
+  .ps-tags {
+    top: 12px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .ps-number {
+    left: 20px;
+    top: 16px;
+    font-size: 14px;
+  }
+  .ps-title {
+    margin-left: 36px;
+    font-size: 18px;
+  }
+  .ps-box {
+    padding: 16px;
+  }
+  .ps-tags {
+    top: 8px;
+  }
+  .ps-tag {
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 157%;
+  }
+  .ps-desc {
+    font-size: 14px;
+  }
+  .ps-content {
+    gap: 12px;
+    padding: 0px 20px;
+  }
+}

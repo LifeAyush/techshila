@@ -5,8 +5,7 @@ import LeaderBoardTable from "../../Components/LeaderboardTable/LeaderBoardTable
 import Navbar from "../../Components/Navbar/Navbar";
 
 const LeaderBoard = () => {
-  const [leaderBoardData, setLeaderBoardData] = useState([]);
-
+  // const [leaderBoardData, setLeaderBoardData] = useState([]);
   // useEffect(() => {
   //   getLeaderBoardData()
   //     .then((res) => {
