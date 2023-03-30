@@ -1,10 +1,13 @@
-import React from 'react'
-import "./problemStatements.css"
+import React from "react";
+import Navbar from "../../Components/Navbar/Navbar";
+import "./problemStatements.css";
 
 const ProblemStatements = () => {
   return (
-    <div>ProblemStatements</div>
-  )
-}
+    <div className="page">
+      <Navbar />
+    </div>
+  );
+};
 
-export default ProblemStatements
+export default ProblemStatements;
