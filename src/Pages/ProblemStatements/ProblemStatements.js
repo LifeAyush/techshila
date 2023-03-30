@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getPsData } from "../../Data/Data";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./problemStatements.css";
+import Footer from "../../Components/Footer/Footer";
 
 const ProblemStatements = () => {
   // const [psData, setPsData] = useState([]);
@@ -92,6 +93,7 @@ const ProblemStatements = () => {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

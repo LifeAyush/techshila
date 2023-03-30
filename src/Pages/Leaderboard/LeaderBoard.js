@@ -3,6 +3,7 @@ import { getLeaderBoardData } from "../../Data/Data";
 import "./LeaderBoard.css";
 import LeaderBoardTable from "../../Components/LeaderboardTable/LeaderBoardTable";
 import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const LeaderBoard = () => {
   // const [leaderBoardData, setLeaderBoardData] = useState([]);
@@ -16,10 +17,11 @@ const LeaderBoard = () => {
   //       console.log(err);
   //     });
   // }, []);
-  
+
   return (
     <div className="page">
       <Navbar />
+      <Footer />
     </div>
   );
 };

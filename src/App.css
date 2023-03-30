@@ -49,7 +49,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 140px;
+  gap: 80px;
   background-color: #010101;
 }
 .title {
