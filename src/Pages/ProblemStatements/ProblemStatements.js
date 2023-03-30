@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { getPsData } from "../../Data/Data";
 import Navbar from "../../Components/Navbar/Navbar";
-import "./problemStatements.css";
 import Footer from "../../Components/Footer/Footer";
+import bottomGraphic from "../../Assets/Images/bottomGraphic.svg";
+import "./problemStatements.css";
 
 const ProblemStatements = () => {
   // const [psData, setPsData] = useState([]);
@@ -94,6 +95,7 @@ const ProblemStatements = () => {
         </div>
       </div>
       <Footer />
+      <img src={bottomGraphic} alt="Graphic" className="bottom-graphic" />
     </div>
   );
 };

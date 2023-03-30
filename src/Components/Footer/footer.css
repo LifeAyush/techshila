@@ -4,6 +4,8 @@
   gap: 24px;
   padding: 80px 180px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 .footer-title {
   font-family: "Whyte Inktrap";

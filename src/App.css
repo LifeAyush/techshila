@@ -51,6 +51,14 @@ button {
   align-items: center;
   gap: 80px;
   background-color: #010101;
+  position: relative;
+  overflow: hidden;
+}
+.bottom-graphic{
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  z-index: 0;
 }
 .title {
   font-family: "Whyte Inktrap";

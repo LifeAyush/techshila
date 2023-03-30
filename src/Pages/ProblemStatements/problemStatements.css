@@ -4,6 +4,8 @@
   align-items: flex-start;
   gap: 40px;
   padding: 0px auto;
+  position: relative;
+  z-index: 1;
 }
 .ps-grid {
   display: grid;
