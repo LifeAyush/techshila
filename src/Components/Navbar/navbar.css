@@ -125,11 +125,10 @@
     padding: 24px 24px 0px 24px;
   }
   .nav-logo {
-    scale: 0.7;
-    margin-left: -54px;
+    width: 320px;
   }
   .nav-icon {
-    scale: 1.25;
+    scale: 1.35;
   }
   .nav-dropdown-blur {
     padding: 0px 24px;
@@ -137,24 +136,17 @@
 }
 @media screen and (max-width: 550px) {
   .nav-logo {
-    scale: 0.55;
-    margin-left: -84px;
+    width: 250px;
   }
   .nav-icon {
-    scale: 1;
+    scale: 1.15;
   }
 }
 @media screen and (max-width: 450px) {
   .nav-logo {
-    scale: 0.5;
-    margin-left: -100px;
+    width: 215px;
   }
   .nav-icon {
     scale: 1;
-  }
-}
-@media screen and (max-width: 365px) {
-  .nav-icon {
-    margin-left: -20px;
   }
 }
