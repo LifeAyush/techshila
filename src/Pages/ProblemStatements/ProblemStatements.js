@@ -95,7 +95,7 @@ const ProblemStatements = () => {
         </div>
       </div>
       <Footer />
-      <img src={bottomGraphic} alt="Graphic" className="bottom-graphic" />
+      <img src={bottomGraphic} alt="Graphic" className="bottom-graphic non-draggable" />
     </div>
   );
 };

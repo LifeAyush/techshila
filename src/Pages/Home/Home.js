@@ -8,7 +8,7 @@ const Home = () => {
     <div className="page">
       <Navbar />
       <Footer />
-      <img src={bottomGraphic} alt="Graphic" className="bottom-graphic" />
+      <img src={bottomGraphic} alt="Graphic" className="bottom-graphic non-draggable" />
     </div>
   );
 };

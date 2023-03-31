@@ -5,8 +5,9 @@
   justify-content: space-between;
   width: 100%;
   padding: 40px 105px 0px 105px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  z-index: 2;
 }
 .nav-links {
   display: flex;

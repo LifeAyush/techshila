@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="footer-contact">
           <div className="footer-contact-flex">
-            <img src={arrow} className="footer-contact-flex-icon" alt="#" />
+            <img src={arrow} className="footer-contact-flex-icon non-draggable" alt="#" />
             <a
               href="mailto:gensec.technical@iitr.ac.in"
               className="footer-sub-text"
@@ -28,7 +28,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-contact-flex">
-            <img src={arrow} className="footer-contact-flex-icon" alt="#" />
+            <img src={arrow} className="footer-contact-flex-icon non-draggable" alt="#" />
             <div className="footer-sub-text">
               Ashutosh Singh: +91 95602 83080
             </div>
