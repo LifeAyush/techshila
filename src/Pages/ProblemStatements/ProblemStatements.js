@@ -71,7 +71,7 @@ const ProblemStatements = () => {
   return (
     <div className="page">
       <Navbar />
-      <div className="ps-content">
+      <div className="page-content">
         <h1 className="title">Problem Statements</h1>
         <div className="ps-grid">
           {psData.map((ps) => {
