@@ -34,6 +34,10 @@ button {
   font-family: "Whyte Inktrap Italic";
   src: url("./Assets/Fonts/WhyteInktrap-Italic.woff") format("woff");
 }
+@font-face {
+  font-family: "Netron";
+  src: url("./Assets/Fonts/Netron.ttf") format("truetype");
+}
 
 /* Global Styles */
 
@@ -104,6 +108,9 @@ button {
     gap: 24px;
     padding: 0px 24px;
   }
+  .page{
+    gap: 60px;
+  }
 }
 @media screen and (max-width: 550px) {
   .page {
@@ -113,6 +120,9 @@ button {
 @media screen and (max-width: 500px) {
   .title {
     font-size: 24px;
+  }
+  .page{
+    gap: 0px;
   }
 }
 @media screen and (max-width: 450px) {

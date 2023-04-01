@@ -72,3 +72,14 @@
 .lb-filter-choice:hover {
   background: rgba(255, 255, 255, 0.15);
 }
+@media screen and (max-width: 750px) {
+  .lb-filter-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .lb-filter-box-text,
+  .lb-filter-choice {
+    font-size: 12px;
+  }
+}
