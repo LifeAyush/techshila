@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/inter-bhawan-frontend/static/css/main.fcded225.css",
+    "main.js": "/inter-bhawan-frontend/static/js/main.901c29f6.js",
+    "static/media/teamImg.png": "/inter-bhawan-frontend/static/media/teamImg.252504079e26bb11b58f.png",
+    "static/media/WhyteInktrap-Medium.ttf": "/inter-bhawan-frontend/static/media/WhyteInktrap-Medium.f23655ec1c93691ae10c.ttf",
+    "static/media/WhyteInktrap-Italic.woff": "/inter-bhawan-frontend/static/media/WhyteInktrap-Italic.8de67d9135427839941f.woff",
+    "static/media/bottomGraphic.svg": "/inter-bhawan-frontend/static/media/bottomGraphic.a30dd7ffeebb32470a92b6e14877524c.svg",
+    "static/media/wave.png": "/inter-bhawan-frontend/static/media/wave.9873d67d3787be0b75de.png",
+    "static/media/logo.svg": "/inter-bhawan-frontend/static/media/logo.3d2db311b4bba6e1cc8bbdbc903aa1e8.svg",
+    "static/media/sponsor1.svg": "/inter-bhawan-frontend/static/media/sponsor1.6ea297d01edaa416eeb7ad7568bb373e.svg",
+    "static/media/Netron.ttf": "/inter-bhawan-frontend/static/media/Netron.a7242007fcd300dd9e9a.ttf",
+    "static/media/medal1.svg": "/inter-bhawan-frontend/static/media/medal1.fbcaa6e55dccdc54d5730fb95d228595.svg",
+    "static/media/medal2.svg": "/inter-bhawan-frontend/static/media/medal2.b5aa7d99bac87127695fc6a2e7f086fb.svg",
+    "static/media/medal3.svg": "/inter-bhawan-frontend/static/media/medal3.e5777904d8c2b46ddcf4093cc370b391.svg",
+    "static/media/introLeftGraphic.svg": "/inter-bhawan-frontend/static/media/introLeftGraphic.776fbcdce6892e18f966bddd68942eca.svg",
+    "static/media/introRightGraphic.svg": "/inter-bhawan-frontend/static/media/introRightGraphic.bbf6aa646284ffbcf6ab7481cfa8bb60.svg",
+    "static/media/linkedIn.svg": "/inter-bhawan-frontend/static/media/linkedIn.7c92dcaae533fa4a5f6bc47fa23ada3f.svg",
+    "static/media/selector.svg": "/inter-bhawan-frontend/static/media/selector.c07161d5f1f75cef984e3f592b304468.svg",
+    "index.html": "/inter-bhawan-frontend/index.html",
+    "static/media/close.svg": "/inter-bhawan-frontend/static/media/close.26b7ed8f40799755cc517675bb38f4c4.svg",
+    "static/media/ham.svg": "/inter-bhawan-frontend/static/media/ham.de690c6f539aa49d8627ff30f847c69b.svg",
+    "static/media/arrow.svg": "/inter-bhawan-frontend/static/media/arrow.87468d338dedfaccd5a6d6096031f984.svg",
+    "main.fcded225.css.map": "/inter-bhawan-frontend/static/css/main.fcded225.css.map",
+    "main.901c29f6.js.map": "/inter-bhawan-frontend/static/js/main.901c29f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcded225.css",
+    "static/js/main.901c29f6.js"
+  ]
+}
