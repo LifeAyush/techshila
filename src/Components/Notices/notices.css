@@ -1,0 +1,197 @@
+.notices-flex {
+  display: flex;
+  flex-direction: row;
+  width: 1080px;
+  height: 543px;
+}
+.notice-titles {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.notice-titles::-webkit-scrollbar {
+  display: none;
+}
+.notice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+.notice:hover {
+  background: #151515;
+}
+.notice-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.notice-content-date {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #999999;
+}
+.notice-content-title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #ffffff;
+}
+.notices-icon {
+  width: 32px;
+  object-fit: cover;
+}
+.notices-desc {
+  width: 50%;
+  height: 100%;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px 24px;
+}
+.notice-desc-con {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.notice-desc-con-sub {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #ffffff;
+  width: 90%;
+}
+.notice-desc-con-title {
+  font-family: "Whyte Inktrap";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.mob-notice {
+  display: none;
+}
+@media screen and (max-width: 1150px) {
+  .notices-flex {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .notices-flex {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .notices-desc {
+    display: none;
+  }
+  .notices-icon {
+    display: none;
+  }
+  .mob-notice {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .notice-content-title {
+    font-size: 24px;
+  }
+  .notice-desc {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 183%;
+    color: #999999;
+  }
+  .notice {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(180deg, #1d1d1e 0%, #010101 100%);
+    width: 400px;
+    height: 550px;
+    flex-shrink: 0;
+  }
+  .notice-content {
+    gap: 12px;
+  }
+  .notice-titles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    overflow-y: hidden;
+  }
+  .notices-flex {
+    width: calc(100vw - 60px);
+    height: unset;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .notices-flex::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .notice {
+    width: 300px;
+    height: 400px;
+  }
+  .notice-content-title {
+    font-size: 18px;
+  }
+  .notice-desc {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .notice-content {
+    gap: 0;
+  }
+  .notice-content-title {
+    font-size: 16px;
+  }
+  .notice-desc,
+  .notice-content-date {
+    font-size: 12px;
+  }
+  .notice-titles {
+    gap: 16px;
+  }
+  .notices-flex {
+    width: calc(100vw - 48px);
+  }
+  .notice {
+    width: 280px;
+    height: 390px;
+  }
+}

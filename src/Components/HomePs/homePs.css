@@ -5,3 +5,6 @@
   overflow-x: scroll;
   width: 80vw;
 }
+.homeps-flex::-webkit-scrollbar {
+  display: none;
+}
