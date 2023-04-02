@@ -45,6 +45,17 @@ const Navbar = () => {
         >
           Leaderboard
         </Link>
+        <Link
+          to="/about-us"
+          className={
+            locator.pathname === "/about-us"
+              ? "nav-link-active"
+              : "nav-link-passive"
+          }
+          title="About Us"
+        >
+          About Us
+        </Link>
       </div>
       <img
         src={isOpen ? close : ham}
@@ -88,6 +99,17 @@ const Navbar = () => {
                 title="leaderboard"
               >
                 Leaderboard
+              </Link>
+              <Link
+                to="/about-us"
+                className={
+                  locator.pathname === "/about-us"
+                    ? "nav-link-active"
+                    : "nav-link-passive"
+                }
+                title="About Us"
+              >
+                About Us
               </Link>
             </div>
           </div>
