@@ -45,24 +45,24 @@ const HomePs = () => {
       desc: "Pluto Drone Swarm Challenge",
       tags: ["Design"],
     },
-    // {
-    //   id: "06",
-    //   title: "Traceable.ai",
-    //   desc: "Pluto Drone Swarm Challenge",
-    //   tags: ["Design"],
-    // },
-    // {
-    //   id: "07",
-    //   title: "Traceable.ai",
-    //   desc: "Pluto Drone Swarm Challenge",
-    //   tags: ["Design"],
-    // },
-    // {
-    //   id: "08",
-    //   title: "Traceable.ai",
-    //   desc: "Pluto Drone Swarm Challenge",
-    //   tags: ["Design"],
-    // },
+    {
+      id: "06",
+      title: "Traceable.ai",
+      desc: "Pluto Drone Swarm Challenge",
+      tags: ["Design"],
+    },
+    {
+      id: "07",
+      title: "Traceable.ai",
+      desc: "Pluto Drone Swarm Challenge",
+      tags: ["Design"],
+    },
+    {
+      id: "08",
+      title: "Traceable.ai",
+      desc: "Pluto Drone Swarm Challenge",
+      tags: ["Design"],
+    },
   ];
   return (
     <div className="home-component-flex">

@@ -8,3 +8,21 @@
 .homeps-flex::-webkit-scrollbar {
   display: none;
 }
+.ps-box {
+  flex-shrink: 0;
+}
+@media screen and (max-width: 1250px) {
+  .homeps-flex {
+    width: calc(100vw - 120px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .homeps-flex {
+    width: calc(100vw - 60px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .homeps-flex {
+    width: calc(100vw - 48px);
+  }
+}
