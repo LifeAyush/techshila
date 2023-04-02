@@ -28,7 +28,7 @@ const Notices = () => {
               learning.
             </p>
           </div>
-          <PrimaryButton text="View problem statement" />
+          <PrimaryButton text="View problem statement" url="/problem-statements"/>
         </div>
       </div>
     </div>

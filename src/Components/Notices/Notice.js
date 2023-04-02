@@ -22,7 +22,7 @@ const Notice = () => {
           problem statement from Cilium.org has been released. The problem
           revolves around the fields of machine learning and deep learning.
         </p>
-        <PrimaryButton text="View problem statement" />
+        <PrimaryButton text="View problem statement" url="/problem-statements"/>
       </div>
     </div>
   );

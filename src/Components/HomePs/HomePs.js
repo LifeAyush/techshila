@@ -87,7 +87,7 @@ const HomePs = () => {
           );
         })}
       </div>
-      <PrimaryButton text="View all problem statements" />
+      <PrimaryButton text="View all problem statements" url="/problem-statements"/>
     </div>
   );
 };
