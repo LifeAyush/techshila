@@ -145,6 +145,12 @@ const LeaderBoard = () => {
               <div className="lb-filter-choices">
                 <div
                   className="lb-filter-choice"
+                  onClick={() => setChoice("All Problem Statements")}
+                >
+                  All Problem Statements
+                </div>
+                <div
+                  className="lb-filter-choice"
                   onClick={() => setChoice("Cilium.org")}
                 >
                   Cilium.org
