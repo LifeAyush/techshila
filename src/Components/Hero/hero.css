@@ -152,8 +152,6 @@
     gap: 60px;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 5;
   }
   .hero-header {
     padding-top: calc(50vh - 106px);
@@ -165,6 +163,8 @@
     gap: 14px;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 40px;
   }
   .scroll-ani-text {
     font-family: "Fira Code";
@@ -281,7 +281,7 @@
   .scroll-ani-text {
     font-size: 16px;
   }
-  .hero-header{
+  .hero-header {
     padding-top: calc(30vh - 64px);
   }
 }
@@ -302,10 +302,10 @@
   .hero-sub-title {
     font-size: 16px;
   }
-  .hero-header{
+  .hero-header {
     padding-top: calc(30vh - 56px);
   }
-  .hero-cta{
+  .hero-cta {
     gap: 175px;
   }
 }
