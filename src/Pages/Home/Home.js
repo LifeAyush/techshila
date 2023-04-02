@@ -7,6 +7,7 @@ import bottomGraphic from "../../Assets/Images/bottomGraphic.svg";
 import "./home.css";
 import Sponsors from "../../Components/Sponsors/Sponsors";
 import Team from "../../Components/Team/Team";
+import HomePs from "../../Components/HomePs/HomePs";
 const Home = () => {
   return (
     <div className="home">
@@ -15,6 +16,7 @@ const Home = () => {
       <Intro />
       <div className="home-content">
         <Sponsors />
+        <HomePs />
         <Team />
       </div>
       <Footer />

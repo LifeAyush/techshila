@@ -1,0 +1,7 @@
+.homeps-flex {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 1;
+  overflow-x: scroll;
+  width: 80vw;
+}
