@@ -20,13 +20,14 @@ const Home = () => {
         <Notices />
         <HomePs />
         <Team />
-      </div>
-      <Footer />
-      <img
+        <img
         src={bottomGraphic}
         alt="Graphic"
         className="bottom-graphic non-draggable"
       />
+      <Footer />
+      </div>
+      
     </div>
   );
 };

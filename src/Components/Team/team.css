@@ -3,6 +3,8 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 120px;
+  position: relative;
+  z-index: 6;
 }
 .team-card {
   display: flex;

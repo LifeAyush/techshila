@@ -3,9 +3,10 @@
   padding: 0px 0px 8px 8px;
   transition: all 0.25s ease;
   cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 4% 100%, 0 80%);
 }
 .pb-btm-layer:hover {
-  padding: 0px 0px 4px 4px;
+  padding: 4px 4px 4px 4px;
 }
 .pb-top-layer {
   background: linear-gradient(180deg, #6838ec 0%, rgba(104, 56, 236, 0.6) 100%);
@@ -16,6 +17,7 @@
   font-size: 24px;
   line-height: 129%;
   color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 4% 100%, 0 80%);
 }
 @media screen and (max-width: 800px) {
   .pb-top-layer {
