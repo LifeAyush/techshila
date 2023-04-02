@@ -26,6 +26,7 @@ button {
 /* Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
 @font-face {
   font-family: "Whyte Inktrap";
   src: url("./Assets/Fonts/WhyteInktrap-Medium.ttf") format("truetype");
@@ -108,7 +109,7 @@ button {
     gap: 24px;
     padding: 0px 24px;
   }
-  .page{
+  .page {
     gap: 60px;
   }
 }
@@ -121,7 +122,7 @@ button {
   .title {
     font-size: 24px;
   }
-  .page{
+  .page {
     gap: 0px;
   }
 }
