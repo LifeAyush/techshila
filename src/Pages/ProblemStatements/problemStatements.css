@@ -13,6 +13,11 @@
   background: #010101;
   border: 1px solid #ffffff;
   padding: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.ps-box:hover {
+  background: #151515;
 }
 .ps-number {
   font-family: "Whyte Inktrap Italic";
