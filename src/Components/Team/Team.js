@@ -1,10 +1,12 @@
 import React from "react";
 import "./team.css";
+import { useLocation } from "react-router-dom";
 import teamImg from "../../Assets/Images/teamImg.png";
 import linkedIn from "../../Assets/Images/linkedIn.svg";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const Team = () => {
+  const locator = useLocation();
   var team = [
     {
       id: 1,
@@ -57,9 +59,13 @@ const Team = () => {
           );
         })}
       </div>
-      <div className="team-btn">
-        <PrimaryButton text="Visit about us page" />
-      </div>
+      {locator.pathname != "/about-us" ? (
+        <div className="team-btn">
+          <PrimaryButton text="Visit about us page" />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
