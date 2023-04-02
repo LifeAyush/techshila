@@ -305,4 +305,7 @@
   .hero-header{
     padding-top: calc(30vh - 56px);
   }
+  .hero-cta{
+    gap: 175px;
+  }
 }
