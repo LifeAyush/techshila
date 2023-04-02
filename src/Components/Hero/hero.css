@@ -16,7 +16,7 @@
   width: 60vw;
   height: 100vh;
   position: absolute;
-  left: -10vw;
+  left: calc(-10vw - 2px);
   background: conic-gradient(
     from 90deg at 67.5% 50%,
     #6838ec 0deg,
@@ -288,7 +288,8 @@
 @media screen and (max-width: 450px) {
   .hero-bg-left {
     width: 130vw;
-    left: -80vw;
+    left: calc(-80vw + 0.4px);
+    /* left: -80vw; */
   }
   .hero-bg-right {
     width: 130vw;
