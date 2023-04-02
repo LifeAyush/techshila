@@ -289,7 +289,6 @@
   .hero-bg-left {
     width: 130vw;
     left: calc(-80vw + 0.4px);
-    /* left: -80vw; */
   }
   .hero-bg-right {
     width: 130vw;

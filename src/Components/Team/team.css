@@ -1,0 +1,94 @@
+.team-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 120px;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 280px;
+}
+.team-card-img {
+  width: 100%;
+  object-fit: cover;
+}
+.team-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: flex-start;
+}
+.team-card-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.team-card-sub-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: rgba(255, 255, 255, 0.6);
+}
+.team-card-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.team-card-socils-icon {
+  width: 24px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.team-btn {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .team-flex {
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .team-flex {
+    gap: 50px;
+  }
+  .team-card {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .team-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .team-card-socials {
+    display: none;
+  }
+  .team-btn {
+    display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  .team-card {
+    width: calc(50vw - 44px);
+    gap: 16px;
+  }
+  .team-flex {
+    gap: 40px;
+  }
+  .team-card-title {
+    font-size: 16px;
+  }
+  .team-card-sub-title {
+    font-size: 11px;
+  }
+}
