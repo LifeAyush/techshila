@@ -1,0 +1,50 @@
+.spon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.spon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.spon-image {
+  width: 220px;
+  object-fit: cover;
+}
+.spon-marquee {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .spon-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .spon-grid {
+    display: none;
+  }
+  .spon-marquee {
+    display: flex;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .spon {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .spon {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .spon {
+    gap: 14px;
+  }
+  .spon-image {
+    width: 140px;
+  }
+}
