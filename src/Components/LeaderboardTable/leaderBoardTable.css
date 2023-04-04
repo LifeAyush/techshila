@@ -14,8 +14,6 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  display: flex;
-  align-items: flex-end;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -23,8 +21,13 @@
   width: 40px;
   text-align: center;
 }
+.table-medium-cell {
+  width: 80px;
+  text-align: center;
+}
 .table-large-cell {
   width: 200px;
+  text-align: start;
 }
 .lb-table-gold {
   background: linear-gradient(124.24deg, #f9db6f 0%, #ffd952 107.44%);
@@ -32,6 +35,9 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+.lb-table-green {
+  color: rgb(0, 205, 0) !important;
 }
 .lb-table-silver {
   background: linear-gradient(112.79deg, #dbdbdb 0%, #bfbfbf 108.8%);
@@ -69,8 +75,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: flex-end;
   color: #ffffff;
 }
 .table-medal {
@@ -124,6 +128,9 @@
   }
   .table-large-cell {
     width: 85px;
+  }
+  .table-medium-cell {
+    width: 60px;
   }
   .table-small-cell {
     width: 25px;

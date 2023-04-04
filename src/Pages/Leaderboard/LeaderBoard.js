@@ -120,6 +120,68 @@ const LeaderBoard = () => {
     },
   ];
 
+  var leaderBoardData2 = [
+    {
+      rank: "1",
+      name: "Rajiv",
+      pointsEarned: "90",
+      pointsAdded: "18",
+    },
+    {
+      rank: "2",
+      name: "Ravindra",
+      pointsEarned: "75",
+      pointsAdded: "12",
+    },
+    {
+      rank: "3",
+      name: "Govind",
+      pointsEarned: "50",
+      pointsAdded: "8",
+    },
+    {
+      rank: "4",
+      name: "Jawahar",
+      pointsEarned: "42",
+      pointsAdded: "7",
+    },
+    {
+      rank: "4",
+      name: "Jawahar",
+      pointsEarned: "42",
+      pointsAdded: "7",
+    },
+    {
+      rank: "4",
+      name: "Jawahar",
+      pointsEarned: "42",
+      pointsAdded: "7",
+    },
+    {
+      rank: "4",
+      name: "Jawahar",
+      pointsEarned: "42",
+      pointsAdded: "7",
+    },
+    {
+      rank: "4",
+      name: "Jawahar",
+      pointsEarned: "42",
+      pointsAdded: "7",
+    },
+    {
+      rank: "4",
+      name: "Jawahar",
+      pointsEarned: "42",
+      pointsAdded: "7",
+    },
+    {
+      rank: "4",
+      name: "Jawahar",
+      pointsEarned: "42",
+      pointsAdded: "7",
+    },
+  ];
   return (
     <div className="page">
       <Navbar />
@@ -173,7 +235,14 @@ const LeaderBoard = () => {
             )}
           </div>
         </div>
-        <LeaderBoardTable data={leaderBoardData} />
+        <LeaderBoardTable
+          data={
+            choice === "All Problem Statements"
+              ? leaderBoardData
+              : leaderBoardData2
+          }
+          type={choice === "All Problem Statements" ? "all" : "ps"}
+        />
       </div>
       <Footer />
       <img
