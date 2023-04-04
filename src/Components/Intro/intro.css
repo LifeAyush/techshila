@@ -61,24 +61,12 @@
   line-height: 112%;
   color: #ffffff;
   -webkit-text-stroke: 1px #ffffff;
-  -webkit-text-fill-color: #ffffff;
-  transition: all 0.25s ease;
-  /* animation: fade 2.5s infinite ease-in-out; */
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.8s ease;
 }
 .intro-para:hover {
-  -webkit-text-stroke: 1px #ffffff;
-  -webkit-text-fill-color: transparent;
+  color: rgba(255, 255, 255, 0);
 }
-/* @keyframes fade {
-  0% {
-    -webkit-text-stroke: 1px #ffffff;
-    -webkit-text-fill-color: #ffffff;
-  }
-  100% {
-    -webkit-text-stroke: 1px #ffffff;
-    -webkit-text-fill-color: transparent;
-  }
-} */
 .intro-para-solid {
   border-bottom: 6px solid transparent;
   border-image-source: linear-gradient(
@@ -88,23 +76,12 @@
   );
   border-image-slice: 1;
   -webkit-text-stroke: 1px #ffffff;
-  -webkit-text-fill-color: #ffffff;
-  /* animation: unfade 2.5s infinite ease-out; */
+  color: rgba(255, 255, 255, 1);
 }
 .intro-para-solid:hover {
   -webkit-text-stroke: 1px #ffffff;
-  -webkit-text-fill-color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
-/* @keyframes unfade {
-  0% {
-    -webkit-text-stroke: 1px #ffffff;
-    -webkit-text-fill-color: #ffffff;
-  }
-  100% {
-    -webkit-text-stroke: 1px #ffffff;
-    -webkit-text-fill-color: #ffffff;
-  }
-} */
 .intro-btm-flex {
   display: flex;
   flex-direction: row;
@@ -187,32 +164,34 @@
   }
   .intro-para {
     font-size: 48px;
-    animation: colorChange 5s infinite ease-in-out;
+    -webkit-text-stroke: 0px;
+    animation: colorChange 4s infinite ease;
   }
   @keyframes colorChange {
     0% {
-      color: white;
+      color: rgba(255, 255, 255, 1);
     }
     50% {
-      color: #6838ec;
+      color: rgba(104, 56, 236, 1);
     }
     100% {
-      color: white;
+      color: rgba(255, 255, 255, 1);
     }
   }
   .intro-para-solid {
     border-bottom: none;
-    animation: unColorChange 5s infinite ease-out;
+    -webkit-text-stroke: 0px;
+    animation: unColorChange 4s infinite ease;
   }
   @keyframes unColorChange {
     0% {
-      color: white;
+      color: rgba(255, 255, 255, 1);
     }
     50% {
-      color: white;
+      color: rgba(255, 255, 255, 1);
     }
     100% {
-      color: white;
+      color: rgba(255, 255, 255, 1);
     }
   }
   .intro-btm-flex {
