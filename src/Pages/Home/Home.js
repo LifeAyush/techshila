@@ -13,21 +13,23 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar />
-      <Hero />
+      <Hero
+        title="TECHSHILA"
+        subtitle="INTER BHAWAN TECH MEET V1.0"
+      />
       <Intro />
       <div className="home-content">
-        <Sponsors />
+        {/* <Sponsors /> */}
         <Notices />
         <HomePs />
         <Team />
         <img
-        src={bottomGraphic}
-        alt="Graphic"
-        className="bottom-graphic non-draggable"
-      />
-      <Footer />
+          src={bottomGraphic}
+          alt="Graphic"
+          className="bottom-graphic non-draggable"
+        />
+        <Footer />
       </div>
-      
     </div>
   );
 };

@@ -6,6 +6,7 @@ import selector from "../../Assets/Images/selector.svg";
 import Navbar from "../../Components/Navbar/Navbar";
 import LeaderBoardTable from "../../Components/LeaderboardTable/LeaderBoardTable";
 import Footer from "../../Components/Footer/Footer";
+import Hero from "../../Components/Hero/Hero";
 
 const LeaderBoard = () => {
   const [choice, setChoice] = useState("All Problem Statements");
@@ -183,72 +184,79 @@ const LeaderBoard = () => {
     },
   ];
   return (
-    <div className="page">
+    // <div className="page">
+    //   <Navbar />
+    //   <div className="page-content">
+    //     <h1 className="title">Leaderboard</h1>
+    //     <div className="lb-filter-flex">
+    //       <div className="lb-filter-text">Filter by Problem Statement : </div>
+    //       <div
+    //         className="lb-filter-box"
+    //         onClick={() => setFilterOpen((prev) => !prev)}
+    //       >
+    //         <div className="lb-filter-box-text">{choice}</div>
+    //         <img
+    //           src={selector}
+    //           alt="select"
+    //           className={
+    //             filterOpen
+    //               ? "lb-filter-box-icon-close"
+    //               : "lb-filter-box-icon-open"
+    //           }
+    //         />
+    //         {filterOpen ? (
+    //           <div className="lb-filter-choices">
+    //             <div
+    //               className="lb-filter-choice"
+    //               onClick={() => setChoice("All Problem Statements")}
+    //             >
+    //               All Problem Statements
+    //             </div>
+    //             <div
+    //               className="lb-filter-choice"
+    //               onClick={() => setChoice("Cilium.org")}
+    //             >
+    //               Cilium.org
+    //             </div>
+    //             <div
+    //               className="lb-filter-choice"
+    //               onClick={() => setChoice("ISRO")}
+    //             >
+    //               ISRO
+    //             </div>
+    //             <div
+    //               className="lb-filter-choice"
+    //               onClick={() => setChoice("Traceable.ai")}
+    //             >
+    //               Traceable.ai
+    //             </div>
+    //           </div>
+    //         ) : (
+    //           ""
+    //         )}
+    //       </div>
+    //     </div>
+    //     <LeaderBoardTable
+    //       data={
+    //         choice === "All Problem Statements"
+    //           ? leaderBoardData
+    //           : leaderBoardData2
+    //       }
+    //       type={choice === "All Problem Statements" ? "all" : "ps"}
+    //     />
+    //   </div>
+    //   <Footer />
+    //   <img
+    //     src={bottomGraphic}
+    //     alt="Graphic"
+    //     className="bottom-graphic non-draggable"
+    //   />
+    // </div>
+    <div className="home">
       <Navbar />
-      <div className="page-content">
-        <h1 className="title">Leaderboard</h1>
-        <div className="lb-filter-flex">
-          <div className="lb-filter-text">Filter by Problem Statement : </div>
-          <div
-            className="lb-filter-box"
-            onClick={() => setFilterOpen((prev) => !prev)}
-          >
-            <div className="lb-filter-box-text">{choice}</div>
-            <img
-              src={selector}
-              alt="select"
-              className={
-                filterOpen
-                  ? "lb-filter-box-icon-close"
-                  : "lb-filter-box-icon-open"
-              }
-            />
-            {filterOpen ? (
-              <div className="lb-filter-choices">
-                <div
-                  className="lb-filter-choice"
-                  onClick={() => setChoice("All Problem Statements")}
-                >
-                  All Problem Statements
-                </div>
-                <div
-                  className="lb-filter-choice"
-                  onClick={() => setChoice("Cilium.org")}
-                >
-                  Cilium.org
-                </div>
-                <div
-                  className="lb-filter-choice"
-                  onClick={() => setChoice("ISRO")}
-                >
-                  ISRO
-                </div>
-                <div
-                  className="lb-filter-choice"
-                  onClick={() => setChoice("Traceable.ai")}
-                >
-                  Traceable.ai
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-          </div>
-        </div>
-        <LeaderBoardTable
-          data={
-            choice === "All Problem Statements"
-              ? leaderBoardData
-              : leaderBoardData2
-          }
-          type={choice === "All Problem Statements" ? "all" : "ps"}
-        />
-      </div>
-      <Footer />
-      <img
-        src={bottomGraphic}
-        alt="Graphic"
-        className="bottom-graphic non-draggable"
+      <Hero
+        title="Coming Soon"
+        subtitle="Hey, we’ll be announcing results soon!"
       />
     </div>
   );

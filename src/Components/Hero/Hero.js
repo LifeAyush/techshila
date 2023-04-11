@@ -1,9 +1,11 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import "./hero.css";
 import wave from "../../Assets/Images/wave.png";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
-const Hero = () => {
+const Hero = ({ title, subtitle }) => {
+  const locator = useLocation();
   return (
     <div className="hero">
       <div className="hero-bg">
@@ -14,18 +16,22 @@ const Hero = () => {
       </div>
       <div className="hero-content">
         <div className="hero-header">
-          <div className="hero-title">TechShila</div>
-          <div className="hero-sub-title">INTER BHAWAN TECH MEET V1.0</div>
+          <div className="hero-title">{title}</div>
+          <div className="hero-sub-title">{subtitle}</div>
         </div>
-        <div className="hero-cta">
-          <PrimaryButton text="VIEW PROBLEM STATEMENTS" />
-          <div className="scroll-ani-flex">
-            <div className="scroll-track">
-              <div className="scroll-thumb" />
+        {locator.pathname === "/" ? (
+          <div className="hero-cta">
+            <PrimaryButton text="VIEW PROBLEM STATEMENTS" />
+            <div className="scroll-ani-flex">
+              <div className="scroll-track">
+                <div className="scroll-thumb" />
+              </div>
+              <span className="scroll-ani-text">Scroll</span>
             </div>
-            <span className="scroll-ani-text">Scroll</span>
           </div>
-        </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

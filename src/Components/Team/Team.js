@@ -3,6 +3,7 @@ import "./team.css";
 import { useLocation } from "react-router-dom";
 import teamImg from "../../Assets/Images/teamImg.png";
 import linkedIn from "../../Assets/Images/linkedIn.svg";
+import instagram from "../../Assets/Images/instagram.svg";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const Team = () => {
@@ -50,8 +51,8 @@ const Team = () => {
                   className="team-card-socils-icon"
                 />
                 <img
-                  src={linkedIn}
-                  alt="LinkedIn"
+                  src={instagram}
+                  alt="Instagram"
                   className="team-card-socils-icon"
                 />
               </div>

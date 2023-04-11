@@ -54,9 +54,7 @@
 .notices-desc {
   width: 50%;
   height: 100%;
-  border-width: 1px 1px 1px 0px;
-  border-style: solid;
-  border-color: #ffffff;
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   gap: 32px;
