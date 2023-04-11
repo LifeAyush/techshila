@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { getPsData } from "../../Data/Data";
+import { Link } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import bottomGraphic from "../../Assets/Images/bottomGraphic.svg";
 import "./problemStatements.css";
+import computerVision from "../../Assets/Ps/computerVision.pdf"
+import droneRobotics from "../../Assets/Ps/droneRobotics.pdf"
+import nlp from "../../Assets/Ps/nlp.pdf"
+import software from "../../Assets/Ps/software.pdf"
+import brandDesign from "../../Assets/Ps/brandDesign.pdf"
+import analytics from "../../Assets/Ps/analytics.pdf"
 
 const ProblemStatements = () => {
   // const [psData, setPsData] = useState([]);
@@ -21,51 +28,45 @@ const ProblemStatements = () => {
   var psData = [
     {
       id: "01",
-      title: "Cilium.org",
-      desc: "Expert Answers in a Flash: Improving domain-specific QA",
-      tags: ["ML", "Deep Learning"],
+      title: "Prof.Sparsh Mittal",
+      desc: "Low Light Image Restoration Challange",
+      tags: ["Computer Vision","ML"],
+      url: computerVision,
     },
     {
       id: "02",
-      title: "Traceable.ai",
-      desc: "Pluto Drone Swarm Challenge",
-      tags: ["Design"],
+      title: "Black Hawk",
+      desc: "Drone Swarming Challenge",
+      tags: ["Robotics"],
+      url: droneRobotics,
     },
     {
       id: "03",
-      title: "Traceable.ai",
-      desc: "Pluto Drone Swarm Challenge",
-      tags: ["Design"],
+      title: "AccioJob",
+      desc: "Multilingual Video Translation Challenge",
+      tags: ["NLP","ML"],
+      url: nlp,
     },
     {
       id: "04",
-      title: "Traceable.ai",
-      desc: "Pluto Drone Swarm Challenge",
-      tags: ["Design"],
+      title: "Tournafest",
+      desc: "Remote PC Controller Application Challenge",
+      tags: ["Software", "Development"],
+      url: software,
     },
     {
       id: "05",
-      title: "Traceable.ai",
-      desc: "Pluto Drone Swarm Challenge",
-      tags: ["Design"],
+      title: "Farmicon",
+      desc: "Brand Design Challenge",
+      tags: ["Design","Branding"],
+      url: brandDesign,
     },
     {
       id: "06",
-      title: "Traceable.ai",
-      desc: "Pluto Drone Swarm Challenge",
-      tags: ["Design"],
-    },
-    {
-      id: "07",
-      title: "Traceable.ai",
-      desc: "Pluto Drone Swarm Challenge",
-      tags: ["Design"],
-    },
-    {
-      id: "08",
-      title: "Traceable.ai",
-      desc: "Pluto Drone Swarm Challenge",
-      tags: ["Design"],
+      title: "Sutra",
+      desc: "Management Consultancies' Case Challenge",
+      tags: ["Analytics","Consulting"],
+      url: analytics,
     },
   ];
   return (
@@ -76,7 +77,7 @@ const ProblemStatements = () => {
         <div className="ps-grid">
           {psData.map((ps) => {
             return (
-              <div className="ps-box" key={ps.id}>
+              <a href={ps.url} className="ps-box" key={ps.id} download>
                 <span className="ps-number">({ps.id})</span>
                 <h2 className="ps-title">{ps.title}</h2>
                 <p className="ps-desc">{ps.desc}</p>
@@ -89,7 +90,7 @@ const ProblemStatements = () => {
                     );
                   })}
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
