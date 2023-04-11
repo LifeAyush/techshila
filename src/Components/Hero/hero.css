@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: relative;
   z-index: 2;
 }
@@ -16,7 +16,7 @@
   width: 60vw;
   height: 100vh;
   position: absolute;
-  left: calc(-10vw - 2px);
+  left: -10vw;
   background: conic-gradient(
     from 90deg at 67.5% 50%,
     #6838ec 0deg,
@@ -39,8 +39,6 @@
   position: absolute;
   width: 3901.39px;
   height: 1972px;
-  /* width: 100%;
-  height: 100%; */
   z-index: 3;
   animation: move 40s infinite linear;
 }
@@ -115,7 +113,7 @@
 @media screen and (max-width: 1400px) {
   .hero-bg-left {
     width: 70vw;
-    left: -20vw;
+    left: calc(-20vw + 1px);
   }
   .hero-bg-right {
     width: 70vw;
@@ -125,7 +123,7 @@
 @media screen and (max-width: 1200px) {
   .hero-bg-left {
     width: 80vw;
-    left: -30vw;
+    left: calc(-30vw + 1px);
   }
   .hero-bg-right {
     width: 80vw;
@@ -135,7 +133,7 @@
 @media screen and (max-width: 1080px) {
   .hero-bg-left {
     width: 90vw;
-    left: -40vw;
+    left: calc(-40vw + 1px);
   }
   .hero-bg-right {
     width: 90vw;
@@ -264,7 +262,7 @@
 @media screen and (max-width: 650px) {
   .hero-bg-left {
     width: 115vw;
-    left: -65vw;
+    left: calc(-65vw + 1px);
   }
   .hero-bg-right {
     width: 115vw;
@@ -288,7 +286,7 @@
 @media screen and (max-width: 450px) {
   .hero-bg-left {
     width: 130vw;
-    left: calc(-80vw + 0.4px);
+    left: calc(-80vw + 1px);
   }
   .hero-bg-right {
     width: 130vw;
