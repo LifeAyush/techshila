@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 120px;
   position: relative;
   z-index: 6;
@@ -15,6 +17,7 @@
 }
 .team-card-img {
   width: 100%;
+  height: 240px;
   object-fit: cover;
 }
 .team-card-content {
@@ -68,8 +71,6 @@
 }
 @media screen and (max-width: 800px) {
   .team-flex {
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 50px;
   }
   .team-card-socials {

@@ -52,14 +52,9 @@
   gap: 8px;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
 }
 .ps-tag {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 4px 8px;
-  gap: 10px;
   background: #272727;
   font-family: "Outfit";
   font-style: normal;
@@ -102,6 +97,15 @@
     position: absolute;
     right: 16px;
     top: 28px;
+    width: auto;
+    max-width: 80px;
+    overflow-x: scroll;
+  }
+  .ps-tags::-webkit-scrollbar {
+    display: none;
+  }
+  .ps-tag {
+    white-space: nowrap;
   }
 }
 @media screen and (max-width: 500px) {
@@ -137,6 +141,7 @@
   }
   .ps-tags {
     top: 8px;
+    right: 8px;
   }
   .ps-tag {
     padding: 2px 6px;
