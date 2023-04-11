@@ -1,6 +1,6 @@
 import React from "react";
 import "./team.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import teamImg from "../../Assets/Images/teamImg.png";
 import linkedIn from "../../Assets/Images/linkedIn.svg";
 import instagram from "../../Assets/Images/instagram.svg";
@@ -14,18 +14,24 @@ const Team = () => {
       name: "Aryan Bidani",
       position: "General Secretary Tech",
       img: teamImg,
+      insta: "",
+      linkedin: "",
     },
     {
       id: 2,
       name: "Ashutosh Singla",
       position: "Deputy General Secretary Tech",
       img: teamImg,
+      insta: "",
+      linkedin: "",
     },
     {
       id: 3,
       name: "Ashutosh Singh",
       position: "Organising Committee Head",
       img: teamImg,
+      insta: "",
+      linkedin: "",
     },
   ];
   return (
@@ -45,16 +51,20 @@ const Team = () => {
                 <div className="team-card-sub-title">{member.position}</div>
               </div>
               <div className="team-card-socials">
-                <img
-                  src={linkedIn}
-                  alt="LinkedIn"
-                  className="team-card-socils-icon"
-                />
-                <img
-                  src={instagram}
-                  alt="Instagram"
-                  className="team-card-socils-icon"
-                />
+                <Link to={member.linkedin}>
+                  <img
+                    src={linkedIn}
+                    alt="LinkedIn"
+                    className="team-card-socils-icon"
+                  />
+                </Link>
+                <Link to={member.insta}>
+                  <img
+                    src={instagram}
+                    alt="Instagram"
+                    className="team-card-socils-icon"
+                  />
+                </Link>
               </div>
             </div>
           );
