@@ -1,18 +1,13 @@
 import React from "react";
-import "./team.css";
-import { useLocation, Link } from "react-router-dom";
 import teamImg from "../../Assets/Images/teamImg.png";
-import linkedIn from "../../Assets/Images/linkedIn.svg";
-import instagram from "../../Assets/Images/instagram.svg";
-import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import TeamSection from "../TeamSection/TeamSection";
 
 const Team = () => {
-  const locator = useLocation();
-  var team = [
+  var teamHeads = [
     {
       id: 1,
       name: "Aryan Bidani",
-      position: "General Secretary Tech",
+      position: "GenSec Tech",
       img: teamImg,
       insta: "",
       linkedin: "",
@@ -20,15 +15,75 @@ const Team = () => {
     {
       id: 2,
       name: "Ashutosh Singla",
-      position: "Deputy General Secretary Tech",
+      position: "Deputy GenSec Tech",
+      img: teamImg,
+      insta: "",
+      linkedin: "",
+    },
+  ];
+  var teamOCs = [
+    {
+      id: 1,
+      name: "Ashutosh Singh",
+      position: "Organising Committee Head",
+      img: teamImg,
+      insta: "",
+      linkedin: "",
+    },
+    {
+      id: 2,
+      name: "Ayush Diwang",
+      position: "Organising Committee Head",
+      img: teamImg,
+      insta: "",
+      linkedin: "",
+    },
+  ];
+  var team = [
+    {
+      id: 1,
+      name: "Aaryan garg",
+      position: "Tech Lead",
+      img: teamImg,
+      insta: "",
+      linkedin: "",
+    },
+    {
+      id: 2,
+      name: "Ayush Patil",
+      position: "Tech Lead",
       img: teamImg,
       insta: "",
       linkedin: "",
     },
     {
       id: 3,
-      name: "Ashutosh Singh",
-      position: "Organising Committee Head",
+      name: "Jon Doe",
+      position: "Member",
+      img: teamImg,
+      insta: "",
+      linkedin: "",
+    },
+    {
+      id: 4,
+      name: "Jon Doe",
+      position: "Member",
+      img: teamImg,
+      insta: "",
+      linkedin: "",
+    },
+    {
+      id: 5,
+      name: "Jon Doe",
+      position: "Member",
+      img: teamImg,
+      insta: "",
+      linkedin: "",
+    },
+    {
+      id: 6,
+      name: "Jon Doe",
+      position: "Member",
       img: teamImg,
       insta: "",
       linkedin: "",
@@ -36,47 +91,9 @@ const Team = () => {
   ];
   return (
     <div className="home-component-flex">
-      <h1 className="title">Meet The Team</h1>
-      <div className="team-flex">
-        {team.map((member) => {
-          return (
-            <div key={member.id} className="team-card">
-              <img
-                src={member.img}
-                alt={member.name}
-                className="team-card-img"
-              />
-              <div className="team-card-content">
-                <div className="team-card-title">{member.name}</div>
-                <div className="team-card-sub-title">{member.position}</div>
-              </div>
-              <div className="team-card-socials">
-                <Link to={member.linkedin}>
-                  <img
-                    src={linkedIn}
-                    alt="LinkedIn"
-                    className="team-card-socils-icon"
-                  />
-                </Link>
-                <Link to={member.insta}>
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    className="team-card-socils-icon"
-                  />
-                </Link>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      {locator.pathname != "/about-us" ? (
-        <div className="team-btn">
-          <PrimaryButton text="Visit about us page" />
-        </div>
-      ) : (
-        ""
-      )}
+      <TeamSection title="Heads" team={teamHeads} type="medium" />
+      <TeamSection title="Overall Co-Ordinators" team={teamOCs} type="medium" />
+      <TeamSection title="Organizing Committee" team={team} type="large" />
     </div>
   );
 };

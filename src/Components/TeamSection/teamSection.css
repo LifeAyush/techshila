@@ -1,9 +1,13 @@
-.team-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
+.team-flex-medium {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px;
+  position: relative;
+  z-index: 6;
+}
+.team-flex-large {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 120px;
   position: relative;
   z-index: 6;
@@ -53,31 +57,33 @@
   object-fit: cover;
   cursor: pointer;
 }
-.team-btn {
-  display: none;
-}
 @media screen and (max-width: 1200px) {
-  .team-flex {
+  .team-flex-large,
+  .team-flex-medium {
     gap: 80px;
   }
 }
-@media screen and (max-width: 1050px) {
-  .team-flex {
-    gap: 50px;
+@media screen and (max-width: 1080px) {
+  .team-flex-large,
+  .team-flex-medium {
+    gap: 60px;
   }
   .team-card {
     width: 220px;
   }
 }
-@media screen and (max-width: 800px) {
-  .team-flex {
-    gap: 50px;
+@media screen and (max-width: 860px) {
+  .team-flex-large,
+  .team-flex-medium {
+    gap: 40px;
   }
+}
+@media screen and (max-width: 800px) {
   .team-card-socials {
     display: none;
   }
-  .team-btn {
-    display: flex;
+  .team-flex-large {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 500px) {
@@ -93,5 +99,8 @@
   }
   .team-card-sub-title {
     font-size: 11px;
+  }
+  .team-card-img {
+    height: 180px;
   }
 }
