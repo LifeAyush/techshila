@@ -6,7 +6,7 @@ import instagram from "../../Assets/Images/instagram.svg";
 
 const TeamSection = ({ title, team, type }) => {
   return (
-    <>
+    <div className="team-section">
       <h1 className="title">{title}</h1>
       <div
         className={type === "medium" ? "team-flex-medium" : "team-flex-large"}
@@ -43,7 +43,7 @@ const TeamSection = ({ title, team, type }) => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

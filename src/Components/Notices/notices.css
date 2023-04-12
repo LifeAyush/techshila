@@ -4,6 +4,9 @@
   width: 1080px;
   height: 543px;
 }
+.highlight {
+  background: #282828;
+}
 .notice-titles {
   display: flex;
   flex-direction: column;
@@ -24,7 +27,7 @@
   cursor: pointer;
 }
 .notice:hover {
-  background: #151515;
+  background: #1a1a1a;
 }
 .notice-content {
   display: flex;

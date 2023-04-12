@@ -122,7 +122,7 @@ button {
     gap: 60px;
   }
   .home-component-flex {
-    gap: 30px;
+    gap: 50px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -138,7 +138,8 @@ button {
     gap: 0px;
   }
   .home-component-flex {
-    gap: 24px;
+    /* gap: 24px; */
+    gap: 40px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -155,8 +156,5 @@ button {
 @media screen and (max-width: 400px) {
   .title {
     font-size: 20px;
-  }
-  .home-component-flex {
-    gap: 20px;
   }
 }
