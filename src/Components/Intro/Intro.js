@@ -20,8 +20,7 @@ const Intro = () => {
       <div className="intro-btm-flex">
         <div className="intro-btm-flex-left">
           <p className="intro-btm-text">
-            Compete among 17 bhawans for the Grand Championship and a chance to
-            win prizes worth 20k.
+            Compete, innovate, and conquer amongst 12 Bhawans for the chance to win the General Championship Trophy!
           </p>
           <img
             src={introLeftGraphic}
