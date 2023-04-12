@@ -7,6 +7,7 @@ import nlp from "../../Assets/Ps/nlp.pdf"
 import software from "../../Assets/Ps/software.pdf"
 import brandDesign from "../../Assets/Ps/brandDesign.pdf"
 import analytics from "../../Assets/Ps/analytics.pdf"
+import product from "../../Assets/Ps/Product.pdf"
 
 const HomePs = () => {
   // const [psData, setPsData] = useState([]);
@@ -62,6 +63,13 @@ const HomePs = () => {
       desc: "Management Consultancies' Case Challenge",
       tags: ["Analytics","Consulting"],
       url: analytics,
+    },
+    {
+      id:"07",
+      title: "FamPay",
+      desc: "Product Challenge",
+      tags: ["Product Management"],
+      url: product,
     },
   ];
   return (
