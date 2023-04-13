@@ -12,6 +12,7 @@ import software from "../../Assets/Ps/software.pdf"
 import brandDesign from "../../Assets/Ps/brandDesign.pdf"
 import analytics from "../../Assets/Ps/analytics.pdf"
 import product from "../../Assets/Ps/Product.pdf"
+import cp from "../../Assets/Ps/cp.pdf"
 
 const ProblemStatements = () => {
   // const [psData, setPsData] = useState([]);
@@ -76,6 +77,13 @@ const ProblemStatements = () => {
       tags: ["Product Management"],
       url: product,
     },
+    {
+      id:"08",
+      title: "Codechef",
+      desc: "Competitive Programming Challenge",
+      tags: ["Competitive Programming"],
+      url: cp,
+    }
   ];
   return (
     <div className="page">
