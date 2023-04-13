@@ -66,6 +66,14 @@ const Team = () => {
     },
     {
       id: 4,
+      name: "Vishnu Sai Bikkumala",
+      position: "Tech Lead",
+      img: require("../../Assets/Images/Vishnu.png"),
+      insta: "https://www.instagram.com/https://www.instagram.com/vishnusaibikkumalla//",
+      linkedin: "https://www.linkedin.https://www.linkedin.com/in/vishnu-sai-bikkumalla-a6400823b//in/lifeayush/",
+    },
+    {
+      id: 5,
       name: "Rishabh Lodha",
       position: "Design Lead",
       img: require("../../Assets/Images/RishabhLodha.png"),
@@ -73,7 +81,7 @@ const Team = () => {
       linkedin: "http://www.linkedin.com/in/rishabh-lodha-b5739a1b9",
     },
     {
-      id: 5,
+      id: 6,
       name: "Somesh Solanki",
       position: "Design & PS Lead",
       img: require("../../Assets/Images/SomeshSolanki.png"),
@@ -81,7 +89,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/somesh-solanki-107823158",
     },
     {
-      id: 6,
+      id: 7,
       name: "Namrata Kamat",
       position: "PS Lead",
       img: require("../../Assets/Images/NamrataKamat.png"),
@@ -89,7 +97,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/namrata-k-7b1049202/",
     },
     {
-      id: 7,
+      id: 8,
       name: "Piyush Dagdiya",
       position: "PS Lead",
       img: require("../../Assets/Images/PiyushDagdiya.png"),
@@ -97,7 +105,15 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/piyush-dagdiya-50873a192/",
     },
     {
-      id: 8,
+      id: 9,
+      name: "Naman Krishna",
+      position: "PS Lead",
+      img: require("../../Assets/Images/NamanKrishna.png"),
+      insta: "https://instagram.com/naman__krishna?igshid=ZDdkNTZiNTM=",
+      linkedin: "https://www.linkedin.com/in/naman-krishna-15310b206",
+    },
+    {
+      id: 10,
       name: "Pranjal Gulati",
       position: "PS Lead",
       img: require("../../Assets/Images/PranjalGulati.png"),
@@ -105,7 +121,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/pranjal-gulati-799148171/",
     },
     {
-      id: 9,
+      id: 11,
       name: "Smith Pereira",
       position: "PS Lead",
       img: require("../../Assets/Images/SmithPereira.png"),
@@ -113,7 +129,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/capriciousrebel/",
     },
     {
-      id: 10,
+      id: 12,
       name: "Shreyank Banakar",
       position: "Operations",
       img: require("../../Assets/Images/ShreyankBanakar.png"),
@@ -121,7 +137,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/shreyank-banakar-b514bb1b5/",
     },
     {
-      id: 11,
+      id: 13,
       name: "Khushal Rathore",
       position: "Operations",
       img: require("../../Assets/Images/KhushalRathore.png"),
@@ -129,7 +145,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/khushal-rathore-4740451ba/",
     },
     {
-      id: 12,
+      id: 14,
       name: "Priyansh Bhandari",
       position: "Operations",
       img: require("../../Assets/Images/PriyanshBhandari.png"),
@@ -137,7 +153,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/priyansh-bhandari-03664a20b",
     },
     {
-      id: 13,
+      id: 15,
       name: "Sagnik Majumdar",
       position: "Content Lead",
       img: require("../../Assets/Images/SagnikMajumdar.png"),
@@ -145,7 +161,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/sagnik-majumdar-50317919a/",
     },
     {
-      id: 14,
+      id: 16,
       name: "Vidhi Sharma",
       position: "Content Lead",
       img: require("../../Assets/Images/VidhiSharma.png"),
@@ -153,7 +169,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/vidhi-sharma-b01b7b20b/",
     },
     {
-      id: 15,
+      id: 17,
       name: "Gurwinder Singh",
       position: "Social Media Lead",
       img: require("../../Assets/Images/GurwinderSingh.png"),
